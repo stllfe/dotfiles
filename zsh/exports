@@ -1,0 +1,8 @@
+#!/bin/sh
+
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
+eval "$(starship init zsh)"
