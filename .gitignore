@@ -1,0 +1,5 @@
+*/**/.DS_Store
+
+./iterm2/AppSupport
+./zsh/plugins
+./zsh/.zcompdump
