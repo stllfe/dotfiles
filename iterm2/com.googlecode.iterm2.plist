@@ -1221,7 +1221,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>JetBrainsMonoMediumNerdFontCompleteM-Medium 16</string>
+			<string>BlexMonoNerdFontCompleteM-Medium 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<true/>
 			<key>Option Key Sends</key>
