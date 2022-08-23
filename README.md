@@ -5,6 +5,8 @@ Configuration files for the tools that I use.
 - [ ] Add [fuzzy file finding](https://github.com/junegunn/fzf)
 - [ ] Add vi-mode stuff once I get used to VIM more
 - [ ] Add setup instuctions
+- [ ] Add an entry configuration script
+- [ ] Add Ubuntu support
 
 **WHISH**:
 - [ ] VS Code and iTerm2 had the same color theme
