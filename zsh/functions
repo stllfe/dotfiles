@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# zsh helpers
 
 function zsh_add_file() {
     [ -f "$ZDOTDIR/$1" ] && source "$ZDOTDIR/$1"
@@ -8,7 +9,7 @@ function zsh_add_file() {
 
 function zsh_add_plugin() {
     PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
-    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then 
+    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then
         # For plugins
         zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
         zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
@@ -20,7 +21,7 @@ function zsh_add_plugin() {
 
 function zsh_add_completion() {
     PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
-    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then 
+    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then
 		completion_file_path=$(ls $ZDOTDIR/plugins/$PLUGIN_NAME/_*)
 		fpath+="$(dirname "${completion_file_path}")"
         zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh"
@@ -31,4 +32,11 @@ function zsh_add_completion() {
     fi
 	completion_file="$(basename "${completion_file_path}")"
 	if [ "$2" = true ] && compinit "${completion_file:1}"
+}
+
+
+# my shorthands
+
+function ht() {
+    howto "$@" | tee >(tr -d '\n' | pbcopy)
 }
