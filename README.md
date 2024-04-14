@@ -39,6 +39,8 @@ Configuration files for the tools that I use.
 - [x] Add setup instuctions
 - [ ] Add an entry configuration script
 - [ ] Add Ubuntu support
+- [ ] Mac system stuff settings (like [here](https://github.com/geerlingguy/dotfiles/blob/master/.osx))
+- [ ] AppStore applications
 
 **WHISH**:
 
