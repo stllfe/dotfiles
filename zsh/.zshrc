@@ -33,7 +33,7 @@ source "$ZDOTDIR/functions"
 
 # normal files to source
 zsh_add_file "exports"
-zsh_add_file "vim-mode"
+# zsh_add_file "vim-mode"
 zsh_add_file "aliases"
 zsh_add_file "secrets"
 
@@ -43,7 +43,7 @@ zsh_add_plugin "zsh-users/zsh-syntax-highlighting"
 zsh_add_plugin "hlissner/zsh-autopair"
 # zsh_add_completion "esc/conda-zsh-completion" false
 # For more plugins: https://github.com/unixorn/awesome-zsh-plugins
-# More completions https://github.com/zsh-users/zsh-completions
+# More completions: https://github.com/zsh-users/zsh-completions
 
 # key-bindings
 # bindkey -s '^o' 'ranger^M'
@@ -73,4 +73,4 @@ compinit
 
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
-# bindkey '^e' edit-command-line
+bindkey '^e' edit-command-line
