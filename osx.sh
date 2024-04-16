@@ -2,6 +2,8 @@
 # some ideas from here:
 # https://github.com/geerlingguy/dotfiles/blob/master/.osx
 
+set -e
+
 # -----------------------------------------------------------------------------
 # Finder:
 # set Desktop as the default location for new Finder windows
@@ -53,6 +55,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0.15
 # -----------------------------------------------------------------------------
 # Screenshots:
 # save to desktop
+mkdir -p "${HOME}/Desktop/Screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/Desktop/Screenshots"
 
 # save in PNG format (other options: BMP, GIF, JPG, PDF, TIFF)
