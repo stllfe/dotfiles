@@ -11,6 +11,9 @@ set -e
 defaults write com.apple.finder NewWindowTarget -string "PfDe"
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desktop/"
 
+# black wallpaper by default
+osascript -e 'tell application "Finder" to set desktop picture to POSIX file "/System/Library/Desktop Pictures/Solid Colors/Black.png"'
+
 # show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
